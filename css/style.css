@@ -6,9 +6,10 @@
   padding: 0 30px;
 }
 
-.header-logo {
-  width: 436px;
-  height: 68px;
+.header-ttl-logo {
+  width: 100px;
+  height: 30px;
+  margin-left:15px;
 }
 
 .header-nav-list {
@@ -68,7 +69,7 @@
 }
 
 .news {
-  width: 80vw;
+  width: 600px;
   margin: 60px auto;
 }
 
@@ -86,23 +87,33 @@
 }
 
 .news-table {
-  margin: 10px auto;
+  width: 100%;
   border-collapse: separate;
-  border-spacing: 20px;
+  border-spacing: 0;
+  border-top: 2px solid gray;
+  border-bottom: 2px solid gray;
 }
 
-table,td {
-  border: none;
-  border-top: 1px solid gray;
+.news-date {
+  color: gray;
+  padding: 20px 0;
   border-bottom: 1px solid gray;
 }
 
-td {
-  color: gray;
+.news-btn {
+  padding: 20px 0;
+  border-bottom: 1px solid gray;
 }
 
-.news-btn {
+.news-text {
+  color: gray;
+  padding: 20px 0;
+  border-bottom: 1px solid gray;
+}
+
+.news-table-btn {
   width: 80px;
+  padding: 5px;
   color: #fff;
   border-radius: 30px;
   background: #B1063A;
@@ -135,9 +146,8 @@ td {
 
 .about-content {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   margin-top: 50px;
+  justify-content: space-around;
 }
 
 .about-text {
@@ -160,7 +170,7 @@ td {
 }
 
 .service {
-  width: 90vw;
+  width: 70vw;
   margin: 60px auto;
 }
 
@@ -180,7 +190,7 @@ td {
 
 .service-parent {
   display: grid;
-  grid-template-rows: 300px 300px;
+  grid-template-rows: 180px 180px;
   grid-template-columns: 1fr 1fr;
   margin: auto;
 }
@@ -209,21 +219,43 @@ td {
 }
 
 .service-img {
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
+  margin: 10px 10px;
 }
 
-img.service {
+.service-img-1 {
+  width: 150px;
+  height: 150px;
+  margin: 30px auto 15px;
+}
+
+.service__first {
   width: 100%;
   height: 100%;
 }
 
+.service-child-ttl-1 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .service-child-ttl {
   color: #fff;
+  margin-bottom: 20px;
+}
+
+.service-text-1 {
+  color: #fff;
+  width: 350px;
+  margin: 0 auto;
+  line-height: 1.5;
 }
 
 .service-text {
   color: #fff;
+  line-height: 1.5;
 }
 
 .blog {
@@ -234,29 +266,32 @@ img.service {
 }
 
 .blog-ttl {
+  width: 70vw;
   font-size: 15px;
   font-family: 'Indie Flower', cursive;;
   color: #B1063A;
   padding-top: 30px;
-  margin-bottom: 5px;
+  margin: 5px auto;
 }
 
 .blog-subttl {
+  width: 70vw;
   color: gray;
   font-size: 20px;
-  margin-bottom: 20px;
+  margin: 10px auto 20px;
 }
 
 .blog-parent {
+  width: 70vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin: auto;
 }
 
 .blog-child {
-  width: 20%;
+  width: 30%;
   border-radius: 20px;
   background: #fff;
-  margin-left: 40px;
   position: relative;
 }
 
@@ -307,6 +342,7 @@ img.service {
 }
 
 .company {
+  width: 600px;
   margin: 60px auto;
 }
 
@@ -325,18 +361,111 @@ img.service {
 }
 
 .company-table {
-  border-collapse: collapse;
+  width: 100%;
+  border: 0.5px solid gray;
+  border-collapse: separate;
+  border-spacing: 0px;
 }
 
+th {
+  border: 0.5px solid gray;
+  padding: 15px;
+  text-align: left;
+  color: gray;
+  background-color: #F5F5F5;
+}
 
-
-
+.company-description {
+  border: 0.5px solid gray;
+  padding: 15px;
+  color: gray;
+}
 
 .recruit-parent {
   display: flex;
-  width: auto;
+  width: 100vw;
+  margin: 0 0 40px;
 }
 
-.recruit-child {
-  width: 50vw;
+.recruit-img {
+  width: 100%;
+}
+
+.recruit-child-1 {
+  width: 100%;
+  position: relative;
+}
+
+.recruit-ttl-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.recruit-child-2 {
+  width: 100%;
+  position: relative;
+}
+
+.recruit-ttl-2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.contact {
+  width: 400px;
+  margin: 60px auto;
+}
+
+.contact-ttl {
+  color: gray;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-line {
+  background-color: #B1063A;
+  width: 3px;
+  height: 60px;
+  margin: 30px auto;
+}
+
+.btn {
+  display: flex;
+  width: 150px;
+  padding: 20px 40px;
+  color: #B1063A;
+  border-radius: 30px;
+  background: linear-gradient(90deg,#ea618b,#900731);
+  text-align: center;
+  box-shadow: 0 10px 0 rgba(red, green, blue, alpha);
+  margin: 50px auto 0;
+  align-items: center;
+}
+
+.mailicon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.contact-btn {
+  color: #fff;
+}
+
+.footer {
+  width: 100vw;
+  padding: 20px 0;
+  background-color: #F5F5F5;
+  color: gray;
+  text-align: center;
 }
